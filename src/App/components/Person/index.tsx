@@ -22,13 +22,13 @@ export const Person = () => {
         <FormattedMessage
           description="Person heading"
           defaultMessage="Person: {label}"
-          values={{ label: serializeLabels(data) }}
+          values={{ label: serializeLabels({labels: data.labels}) }}
         />
       </Heading>
       <div>
         {events.data?.map((e) => {
           const dateText = serializeEventDates([e]);
-          const labelsText = serializeLabels(e);
+          const labelsText = serializeLabels({labels: e.labels});
           return (
             <div key={e.idLocal}>
               {dateText ? `${dateText}: ` : ""}

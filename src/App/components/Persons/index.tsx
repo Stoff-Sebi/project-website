@@ -46,7 +46,7 @@ export const Persons = () => {
       ) : (
         <ul>
           {data.map((person) => {
-            const label = serializeLabels(person);
+            const label = serializeLabels({labels: person.labels});
             const born = serializeEventDates(person.bornIn, "Y");
             return (
               <li key={person.idLocal}>
