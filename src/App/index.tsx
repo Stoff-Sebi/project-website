@@ -1,5 +1,5 @@
 import { Route, Router, Switch } from "react-router";
-import { Home } from "./components/Home";
+import { Home } from "./pages/Home";
 import { Navbar } from "./components/Navbar";
 import { NoMatch } from "./components/NoMatch";
 import { Person } from "./components/Person";

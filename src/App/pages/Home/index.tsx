@@ -1,7 +1,7 @@
 import { FormattedMessage } from "react-intl";
-import { Heading } from "../Heading";
-import { NampiLogo } from "../NampiLogo";
-import { Paragraph } from "../Paragraph";
+import { Heading } from "../../components/Heading";
+import { NampiLogo } from "../../components/NampiLogo";
+import { Paragraph } from "../../components/Paragraph";
 
 export const Home = () => (
   <div>
