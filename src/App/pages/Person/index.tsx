@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 import { serializeEventDates } from "../../utils/serializeEventDates";
 import { serializeLabels } from "../../utils/serializeLabels";
 import { Heading } from "../../components/Heading";
+import { Layout } from "../../components/Layout";
 
 interface Params {
   idLocal: string;
@@ -17,7 +18,7 @@ export const Person = () => {
     query: { orderBy: "date", participant: data?.id },
   });
   return data ? (
-    <div>
+    <Layout>
       <Heading>
         <FormattedMessage
           description="Person heading"
@@ -37,7 +38,7 @@ export const Person = () => {
           );
         })}
       </div>
-    </div>
+    </Layout>
   ) : (
     <></>
   );

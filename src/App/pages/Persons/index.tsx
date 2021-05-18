@@ -10,6 +10,7 @@ import { Icon } from "../../components/Icon";
 import { Input } from "../../components/Input";
 import { ItemNav } from "../../components/ItemNav";
 import { LoadingPlaceholder } from "../../components/LoadingPlaceholder";
+import { Layout } from "../../components/Layout";
 
 export const Persons = () => {
   const [text, setText] = useState<string>("");
@@ -17,7 +18,7 @@ export const Persons = () => {
     query: { orderBy: "label", text },
   });
   return (
-    <div>
+    <Layout>
       <Heading>
         {total === undefined ? (
           <FormattedMessage
@@ -58,6 +59,6 @@ export const Persons = () => {
           })}
         </ul>
       )}
-    </div>
+    </Layout>
   );
 };

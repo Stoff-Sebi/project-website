@@ -2,9 +2,10 @@ import { FormattedMessage } from "react-intl";
 import { Heading } from "../../components/Heading";
 import { Link } from "../../components/Link";
 import { Paragraph } from "../../components/Paragraph";
+import { Layout } from "../../components/Layout";
 
 export const NoMatch = () => (
-  <div>
+  <Layout>
     <Heading>
       <FormattedMessage
         description="No match page heading"
@@ -18,5 +19,5 @@ export const NoMatch = () => (
         values={{ a: (msg: string) => <Link to="/">{msg}</Link> }}
       />
     </Paragraph>
-  </div>
+  </Layout>
 );
