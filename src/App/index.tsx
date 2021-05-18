@@ -2,7 +2,7 @@ import { Route, Router, Switch } from "react-router";
 import { Home } from "./pages/Home";
 import { Navbar } from "./components/Navbar";
 import { NoMatch } from "./pages/NoMatch";
-import { Person } from "./components/Person";
+import { Person } from "./pages/Person";
 import { Persons } from "./pages/Persons";
 import { HISTORY } from "./constants";
 

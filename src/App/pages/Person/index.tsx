@@ -3,7 +3,7 @@ import { FormattedMessage } from "react-intl";
 import { useParams } from "react-router";
 import { serializeEventDates } from "../../utils/serializeEventDates";
 import { serializeLabels } from "../../utils/serializeLabels";
-import { Heading } from "../Heading";
+import { Heading } from "../../components/Heading";
 
 interface Params {
   idLocal: string;
