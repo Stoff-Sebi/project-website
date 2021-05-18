@@ -3,7 +3,7 @@ import { Home } from "./pages/Home";
 import { Navbar } from "./components/Navbar";
 import { NoMatch } from "./pages/NoMatch";
 import { Person } from "./components/Person";
-import { Persons } from "./components/Persons";
+import { Persons } from "./pages/Persons";
 import { HISTORY } from "./constants";
 
 export const App = () => {

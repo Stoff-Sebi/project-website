@@ -5,11 +5,11 @@ import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import { serializeEventDates } from "../../utils/serializeEventDates";
 import { serializeLabels } from "../../utils/serializeLabels";
-import { Heading } from "../Heading";
-import { Icon } from "../Icon";
-import { Input } from "../Input";
-import { ItemNav } from "../ItemNav";
-import { LoadingPlaceholder } from "../LoadingPlaceholder";
+import { Heading } from "../../components/Heading";
+import { Icon } from "../../components/Icon";
+import { Input } from "../../components/Input";
+import { ItemNav } from "../../components/ItemNav";
+import { LoadingPlaceholder } from "../../components/LoadingPlaceholder";
 
 export const Persons = () => {
   const [text, setText] = useState<string>("");
