@@ -14,6 +14,30 @@ export const Navbar = () => (
           defaultMessage="Persons"
         />
       </Link>
+      <Link to="/persons">
+        <FormattedMessage
+          description="The persons link label"
+          defaultMessage="Events"
+        />
+      </Link>
+      <Link to="/persons">
+        <FormattedMessage
+          description="The persons link label"
+          defaultMessage="Search"
+        />
+      </Link>
+      <Link to="/persons">
+        <FormattedMessage
+          description="The persons link label"
+          defaultMessage="Sources"
+        />
+      </Link>
+      <Link to="/persons">
+        <FormattedMessage
+          description="The persons link label"
+          defaultMessage="About"
+        />
+      </Link>
     </div>
   </nav>
 );
