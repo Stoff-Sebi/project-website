@@ -9,17 +9,12 @@ import { HISTORY } from "./constants";
 export const App = () => {
   return (
     <Router history={HISTORY}>
-      <div className="text-gray-800">
-        <Navbar />
-        <div className="m-3">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/persons" component={Persons} />
-            <Route exact path="/person/:idLocal" component={Person} />
-            <Route path="*" component={NoMatch} />
-          </Switch>
-        </div>
-      </div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/persons" component={Persons} />
+        <Route exact path="/person/:idLocal" component={Person} />
+        <Route path="*" component={NoMatch} />
+      </Switch>
     </Router>
   );
 };
