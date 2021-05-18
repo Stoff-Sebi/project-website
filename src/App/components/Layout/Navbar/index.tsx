@@ -1,6 +1,6 @@
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
-import { NampiLogo } from "../NampiLogo";
+import { NampiLogo } from "../../NampiLogo";
 
 export const Navbar = () => (
   <nav className="relative flex items-center justify-between flex-wrap  bg-gray-400 p-3 text-white">
