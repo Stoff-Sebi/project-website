@@ -1,7 +1,7 @@
 import { Route, Router, Switch } from "react-router";
 import { Home } from "./pages/Home";
 import { Navbar } from "./components/Navbar";
-import { NoMatch } from "./components/NoMatch";
+import { NoMatch } from "./pages/NoMatch";
 import { Person } from "./components/Person";
 import { Persons } from "./components/Persons";
 import { HISTORY } from "./constants";

@@ -1,7 +1,7 @@
 import { FormattedMessage } from "react-intl";
-import { Heading } from "../Heading";
-import { Link } from "../Link";
-import { Paragraph } from "../Paragraph";
+import { Heading } from "../../components/Heading";
+import { Link } from "../../components/Link";
+import { Paragraph } from "../../components/Paragraph";
 
 export const NoMatch = () => (
   <div>
