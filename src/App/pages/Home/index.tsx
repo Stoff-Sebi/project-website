@@ -2,9 +2,10 @@ import { FormattedMessage } from "react-intl";
 import { Heading } from "../../components/Heading";
 import { NampiLogo } from "../../components/NampiLogo";
 import { Paragraph } from "../../components/Paragraph";
+import { Layout } from "../../components/Layout";
 
 export const Home = () => (
-  <div>
+  <Layout>
     <Heading>
       <FormattedMessage
         description="The home page heading"
@@ -20,5 +21,5 @@ export const Home = () => (
       </Paragraph>
       <NampiLogo />
     </div>
-  </div>
+  </Layout>
 );
