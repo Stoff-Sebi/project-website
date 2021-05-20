@@ -5,16 +5,16 @@ import { Navbar } from "./components/Layout/Navbar";
 import { NoMatch } from "./pages/NoMatch";
 import { Person } from "./pages/Person";
 import { Persons } from "./pages/Persons";
-import { HISTORY } from "./constants";
+import { HISTORY, APP_ROUTES } from "./constants";
 
 export const App = () => {
   return (
     <Router history={HISTORY}>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/persons" component={Persons} />
-        <Route exact path="/person/:idLocal" component={Person} />
+        <Route exact path={APP_ROUTES.HOME} component={Home} />
+        <Route exact path={APP_ROUTES.ABOUT} component={About} />
+        <Route exact path={APP_ROUTES.PERSONS} component={Persons} />
+        <Route exact path={APP_ROUTES.PERSON} component={Person} />
         <Route path="*" component={NoMatch} />
       </Switch>
     </Router>

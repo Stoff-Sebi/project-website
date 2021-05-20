@@ -9,5 +9,6 @@ export const APP_ROUTES = {
   IMPRINT: "/imprint",
   PERSONS:"/persons",
   SEARCH:"/search",
-  SOURCES: "/sources"
+  SOURCES: "/sources",
+  PERSON: "/person/:id"
 }
