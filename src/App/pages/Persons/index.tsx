@@ -18,7 +18,7 @@ export const Persons = () => {
     query: { orderBy: "label", text },
   });
   return (
-    <Layout>
+    <Layout fluid>
       <Heading>
         {total === undefined ? (
           <FormattedMessage
