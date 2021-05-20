@@ -33,9 +33,9 @@ export const Navbar = () => (
           defaultMessage="Sources"
         />
       </Link>
-      <Link to="/persons">
+      <Link to="/about">
         <FormattedMessage
-          description="The persons link label"
+          description="About page"
           defaultMessage="About"
         />
       </Link>
