@@ -53,7 +53,8 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject",
-    "extract": "formatjs extract"
+    "extract": "formatjs extract",
+    "translate-extract": "formatjs extract \"src/**/*.ts*\" --out-file lang/en.json --id-interpolation-pattern '[sha512:contenthash:base64:6]'"
   },
   "eslintConfig": {
     "extends": [
@@ -90,5 +91,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@formatjs/cli": "^4.2.15"
   }
 }
