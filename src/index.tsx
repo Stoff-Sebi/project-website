@@ -1,4 +1,3 @@
-import { TranslationProvider } from "I18n/TranslationContext";
 import { NampiProvider } from "nampi-use-api";
 import React from "react";
 import ReactDOM from "react-dom";
@@ -14,11 +13,9 @@ if (!api) {
 
 ReactDOM.render(
   <React.StrictMode>
-    <TranslationProvider>
       <NampiProvider api={api} searchTimeout={200}>
         <App />
       </NampiProvider>
-    </TranslationProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

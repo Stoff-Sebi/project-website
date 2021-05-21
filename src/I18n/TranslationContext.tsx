@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useCallback, useState } from "react";
+import { createContext, ReactNode } from "react";
 import { IntlProvider } from "react-intl";
 import {
   DEFAULT_LOCALE,
@@ -9,18 +9,15 @@ import { Locale } from "./Locale";
 
 interface Props {
   children: ReactNode;
+  locale: Locale;
 }
 
 const TranslationContext = createContext(DEFAULT_TRANSLATION_STATE);
 
-const TranslationProvider = ({ children }: Props) => {
-  const [state, setState] = useState({
-    locale: DEFAULT_LOCALE,
-  });
-  const setLocale = useCallback((locale: Locale) => setState({ locale }), []);
+const TranslationProvider = ({ children, locale }: Props) => {
   return (
-    <TranslationContext.Provider value={{ locale: state.locale, setLocale }}>
-      <IntlProvider locale={state.locale} messages={MESSAGES[state.locale]}>
+    <TranslationContext.Provider value={{ locale: locale, setLocale: () => undefined }}>
+      <IntlProvider locale={DEFAULT_LOCALE} messages={MESSAGES[locale]}>
         {children}
       </IntlProvider>
     </TranslationContext.Provider>
