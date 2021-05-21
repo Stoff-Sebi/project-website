@@ -54,7 +54,7 @@
     "test": "craco test",
     "eject": "craco eject",
     "extract": "formatjs extract",
-    "translate-extract": "formatjs extract \"src/**/*.ts*\" --out-file lang/en.json --id-interpolation-pattern '[sha512:contenthash:base64:6]'"
+    "translate-extract": "formatjs extract \"src/**/*.ts*\" --out-file translations/en-US.json --id-interpolation-pattern '[sha512:contenthash:base64:6]'"
   },
   "eslintConfig": {
     "extends": [

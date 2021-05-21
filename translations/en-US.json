@@ -1,1 +1,58 @@
-{}
+{
+  "'/BIq67'": {
+    "defaultMessage": "Sources",
+    "description": "The persons link label"
+  },
+  "'/LLb02'": {
+    "defaultMessage": "Nulla egestas erat sit amet mauris viverra rhoncus. Aliquam pharetra vitae mi vitae dapibus. Morbi tristique vel urna at dictum. Suspendisse sit amet arcu libero. Praesent feugiat quam id risus blandit mattis. Duis bibendum turpis at odio vestibulum, et congue risus lacinia. Sed semper urna nec velit venenatis, ut varius purus venenatis. Vivamus posuere porttitor libero. Praesent id commodo odio, sit amet scelerisque nunc.",
+    "description": "Intro text for about page"
+  },
+  "'0c388d'": {
+    "defaultMessage": "Person: {label}",
+    "description": "Person heading"
+  },
+  "'4k2Iux'": {
+    "defaultMessage": "Welcome to NAMPI",
+    "description": "The home page content"
+  },
+  "'I3I3Ld'": {
+    "defaultMessage": "Home",
+    "description": "The home page heading"
+  },
+  "'M5KAGK'": {
+    "defaultMessage": "Persons",
+    "description": "The persons link label"
+  },
+  "'Mk7MxR'": {
+    "defaultMessage": "Page not found, go back to <a>Home</a>",
+    "description": "No match page content"
+  },
+  "'SIbjPx'": {
+    "defaultMessage": "About",
+    "description": "About page"
+  },
+  "'TS6Cmc'": {
+    "defaultMessage": "Persons ({total})",
+    "description": "Persons page heading with totals"
+  },
+  "'WnYnoi'": {
+    "defaultMessage": "Events",
+    "description": "The persons link label"
+  },
+  "'lCxpDl'": {
+    "defaultMessage": "Error",
+    "description": "No match page heading"
+  },
+  "'q1Tm4+'": {
+    "defaultMessage": "Persons",
+    "description": "Persons page heading without totals"
+  },
+  "'rKx3Iw'": {
+    "defaultMessage": "NAMPI logo",
+    "description": "The alt text for the NAMPI logo"
+  },
+  "'rldA21'": {
+    "defaultMessage": "Search",
+    "description": "The persons link label"
+  }
+}
