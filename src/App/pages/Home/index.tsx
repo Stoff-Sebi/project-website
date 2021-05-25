@@ -3,25 +3,33 @@ import { Heading } from "../../components/Heading";
 import { NampiLogo } from "../../components/NampiLogo";
 import { Paragraph } from "../../components/Paragraph";
 import { Layout } from "../../components/Layout";
+import { SideGridLayout } from "App/components/SideGridLayout";
 
 export const Home = () => (
   <Layout>
-    <Heading>
+    <Heading className="text-3xl pb-1 antialiased">
       <FormattedMessage
-        id="'I3I3Ld'"
         description="The home page heading"
-        defaultMessage="Home"
+        defaultMessage="Nuns and Monks <br></br> Prosopographical Interfaces"
+        values={{ br: (msg: string) => <br></br> }}
       />
     </Heading>
-    <div className="flex flex-col md:flex-row md:justify-between">
-      <Paragraph className="pb-4 md:pb-0">
-        <FormattedMessage
-          id="'4k2Iux'"
-          description="The home page content"
-          defaultMessage="Welcome to NAMPI"
-        />
-      </Paragraph>
-      <NampiLogo />
-    </div>
+    <SideGridLayout
+      left={
+        <>
+          <Paragraph className="pb-4 md:pb-0 underline grey">
+            <FormattedMessage
+              description="The home page content"
+              defaultMessage="A prosopographical project..."
+            />
+          </Paragraph>
+        </>
+      }
+      right={
+        <div className="flex flex-col md:flex-row md:justify-between">
+          <NampiLogo />
+        </div>
+      }
+    ></SideGridLayout>
   </Layout>
 );
