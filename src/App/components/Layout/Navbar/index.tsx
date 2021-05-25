@@ -10,7 +10,7 @@ interface Props {
 
 export const Navbar: React.FC<Props> = (props) => (
 
-  <nav className="relative flex items-center justify-between flex-wrap bg-gray-400 p-3 text-white">
+  <nav className="sticky top-0 relative flex items-center justify-between flex-wrap bg-gray-400 p-3 text-white">
     <div className="space-x-3 text-white flex items-center">
       <Link to={`/${props.lang}${APP_ROUTE.HOME}`} className="font-semibold text-2xl">
         <NampiLogo className="h-10 bg-white p-1 rounded" />
