@@ -17,7 +17,7 @@ const TranslationContext = createContext(DEFAULT_TRANSLATION_STATE);
 const TranslationProvider = ({ children, locale }: Props) => {
   return (
     <TranslationContext.Provider value={{ locale: locale, setLocale: () => undefined }}>
-      <IntlProvider locale={DEFAULT_LOCALE} messages={MESSAGES[locale]}>
+      <IntlProvider locale={locale} messages={MESSAGES[locale]}>
         {children}
       </IntlProvider>
     </TranslationContext.Provider>
