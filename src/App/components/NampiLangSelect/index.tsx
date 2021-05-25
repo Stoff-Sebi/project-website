@@ -22,8 +22,8 @@ export const NampiLangSelect: React.FC<Props> = ({ className, ...props }) => {
    */
   const renderOptions = () => {
     let keys = Object.keys(Locale);
-    return keys.map((key) => (
-      <option value={(Locale as { [property: string]: string })[key]} selected={(Locale as { [property: string]: string })[key] === lang}>
+    return keys.map((key, i) => (
+      <option key={`nav_option${i}`} value={(Locale as { [property: string]: string })[key]}>
         {
           (LANGUAGE_NAMES as { [property: string]: string })[
             (Locale as { [property: string]: string })[key]
@@ -34,7 +34,7 @@ export const NampiLangSelect: React.FC<Props> = ({ className, ...props }) => {
   };
 
   return (
-    <Select className="text-black" {...props} onChange={handleLangChange}>
+    <Select value={lang} className="text-black" {...props} onChange={handleLangChange}>
       {renderOptions()}
     </Select>
   );
