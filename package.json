@@ -54,7 +54,10 @@
     "test": "craco test",
     "eject": "craco eject",
     "extract": "formatjs extract",
-    "translate-extract": "formatjs extract \"src/**/*.ts*\" --out-file translations/en-US.json --id-interpolation-pattern '[sha512:contenthash:base64:6]'"
+    "compile": "formatjs compile",
+    "translate-extract": "formatjs extract \"src/**/*.ts*\" --out-file src/I18n/translations/en-US.json --id-interpolation-pattern '[sha512:contenthash:base64:6]'",
+    "de-translate-compile": "formatjs compile translations/de-DE.json --ast --out-file src/I18n/translations/de-DE.json",
+    "us-translate-compile": "formatjs compile translations/en-US.json --ast --out-file src/I18n/translations/en-US.json"
   },
   "eslintConfig": {
     "extends": [
@@ -65,7 +68,6 @@
       "formatjs"
     ],
     "rules": {
-      "formatjs/no-id": "error",
       "formatjs/enforce-default-message": [
         "error",
         "literal"
