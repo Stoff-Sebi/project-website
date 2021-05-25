@@ -1,1 +1,108 @@
-{}
+{
+  "'/BIq67'": [
+    {
+      "type": 0,
+      "value": "Quellen"
+    }
+  ],
+  "'/LLb02'": [
+    {
+      "type": 0,
+      "value": "Nulla egestas erat sit amet mauris viverra rhoncus. Aliquam pharetra vitae mi vitae dapibus. Morbi tristique vel urna at dictum. Suspendisse sit amet arcu libero. Praesent feugiat quam id risus blandit mattis. Duis bibendum turpis at odio vestibulum, et congue risus lacinia. Sed semper urna nec velit venenatis, ut varius purus venenatis. Vivamus posuere porttitor libero. Praesent id commodo odio, sit amet scelerisque nunc."
+    }
+  ],
+  "'0c388d'": [
+    {
+      "type": 0,
+      "value": "Person: "
+    },
+    {
+      "type": 1,
+      "value": "label"
+    }
+  ],
+  "'4k2Iux'": [
+    {
+      "type": 0,
+      "value": "Wilkommen bei NAMPI!"
+    }
+  ],
+  "'I3I3Ld'": [
+    {
+      "type": 0,
+      "value": "Startseite"
+    }
+  ],
+  "'M5KAGK'": [
+    {
+      "type": 0,
+      "value": "Personen"
+    }
+  ],
+  "'Mk7MxR'": [
+    {
+      "type": 0,
+      "value": "Page not found, go back to "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Home"
+        }
+      ],
+      "type": 8,
+      "value": "a"
+    }
+  ],
+  "'SIbjPx'": [
+    {
+      "type": 0,
+      "value": "About"
+    }
+  ],
+  "'TS6Cmc'": [
+    {
+      "type": 0,
+      "value": "Persons ("
+    },
+    {
+      "type": 1,
+      "value": "total"
+    },
+    {
+      "type": 0,
+      "value": ")"
+    }
+  ],
+  "'WnYnoi'": [
+    {
+      "type": 0,
+      "value": "Events"
+    }
+  ],
+  "'lCxpDl'": [
+    {
+      "type": 0,
+      "value": "Error"
+    }
+  ],
+  "'q1Tm4+'": [
+    {
+      "type": 0,
+      "value": "Persons"
+    }
+  ],
+  "'rKx3Iw'": [
+    {
+      "type": 0,
+      "value": "NAMPI logo"
+    }
+  ],
+  "'rldA21'": [
+    {
+      "type": 0,
+      "value": "Search"
+    }
+  ]
+}
