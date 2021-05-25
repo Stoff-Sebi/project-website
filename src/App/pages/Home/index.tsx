@@ -8,6 +8,7 @@ export const Home = () => (
   <Layout>
     <Heading>
       <FormattedMessage
+        id="'I3I3Ld'"
         description="The home page heading"
         defaultMessage="Home"
       />
@@ -15,6 +16,7 @@ export const Home = () => (
     <div className="flex flex-col md:flex-row md:justify-between">
       <Paragraph className="pb-4 md:pb-0">
         <FormattedMessage
+          id="'4k2Iux'"
           description="The home page content"
           defaultMessage="Welcome to NAMPI"
         />
