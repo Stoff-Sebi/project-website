@@ -5,18 +5,21 @@ import { NoMatch } from "./pages/NoMatch";
 import { Person } from "./pages/Person";
 import { Persons } from "./pages/Persons";
 import { HISTORY, APP_ROUTE, withDynLang } from "./constants";
-import { Locale } from "../I18n/Locale";
+import { DEFAULT_LOCALE } from "../I18n/constants";
 import { TranslationProvider } from "I18n/TranslationContext";
+import { Locale } from "I18n/Locale";
 
 export const App = () => {
   return (
     <Router history={HISTORY}>
       <Route path="/:lang">
         {({ match, location }) => {
-          // add lang to url when not stated
-          // prepend iso language statement
-          if (!location.pathname.includes(`/${match?.params.lang}/`)) {
-            return <Redirect to={`/en${location.pathname}`}></Redirect>;
+          // redirect to url with lang stmt.
+          // prepend iso language statement from constants
+          const langStmt: string = Object.keys(Locale).join("|")  // join Locale enum
+          const langRegex = new RegExp("^\/(" + langStmt + ")\/?", "gi");
+          if (!location.pathname.match(langRegex)) {
+            return <Redirect to={`/${DEFAULT_LOCALE}${location.pathname}`}></Redirect>;
           }
 
           return (
@@ -42,7 +45,7 @@ export const App = () => {
                   path={`/:lang${APP_ROUTE.PERSON}`}
                   component={Person}
                 />
-                <Route path="*" component={NoMatch} />
+                <Route path="/:lang/*" component={NoMatch} />
               </Switch>
             </TranslationProvider>
           );
