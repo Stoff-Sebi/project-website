@@ -1,7 +1,6 @@
 import { createContext, ReactNode } from "react";
 import { IntlProvider } from "react-intl";
 import {
-  DEFAULT_LOCALE,
   DEFAULT_TRANSLATION_STATE,
   MESSAGES,
 } from "./constants";
