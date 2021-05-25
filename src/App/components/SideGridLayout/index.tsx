@@ -8,7 +8,7 @@ interface Props {
 
 export const SideGridLayout: React.FC<Props> = (props) => {
   return (
-    <div className="lg:grid lg:grid-cols-2 lg:gap-4">
+    <div className="lg:grid lg:grid-cols-2 lg:gap-14">
       <div>{props.left}</div>
       <div>{props.right}</div>
     </div>
