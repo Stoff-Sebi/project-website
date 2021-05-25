@@ -77,6 +77,9 @@ export const About = () => {
         right={
           <div style={{ border: "3px solid lightgrey", minHeight: "50vh" }}>
             <img src="https://picsum.photos/200/300?random=2" />
+            <br></br>
+            <br></br>
+            <img src="https://picsum.photos/400/400?random=2" />
           </div>
         }
       />
