@@ -24,7 +24,7 @@ export const Home = () => (
               defaultMessage="Welcome to the Project-Website of NAMPI!"
             />
           </Paragraph>
-          <hr style={{borderTop:"5px solid rgba(156, 163, 175)", borderRadius:"1em"}}></hr>
+          <hr style={{borderTop:"5px solid lightgrey", borderRadius:"1em"}}></hr>
           <br></br>
           <div className="max-w-xxl">
             <Heading className="font-bold">Goals</Heading>
