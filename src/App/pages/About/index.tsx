@@ -8,12 +8,25 @@ import { SideGridLayout } from "../../components/SideGridLayout";
 export const About = () => {
   return (
     <Layout>
-      <Heading>
+      <Heading className="text-4xl font-bold">
         <FormattedMessage
           defaultMessage="About"
           description="About page"
         ></FormattedMessage>
       </Heading>
+      <hr
+            style={{ borderTop: "5px solid lightgrey", borderRadius: "1em", maxWidth:"30px" }}
+          ></hr>
+      <Paragraph className="pb-4 md:pb-0 grey">
+            <FormattedMessage
+              description="About page content description"
+              defaultMessage="General information about the project"
+            />
+          </Paragraph>
+      <hr
+            style={{ borderTop: "5px solid lightgrey", borderRadius: "1em", maxWidth:"30px" }}
+          ></hr>
+          <br></br>
       <SideGridLayout
         left={
           <>

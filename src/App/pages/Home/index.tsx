@@ -18,6 +18,9 @@ export const Home = () => (
     <SideGridLayout
       left={
         <>
+        <hr
+            style={{ borderTop: "5px solid lightgrey", borderRadius: "1em", maxWidth:"30px" }}
+          ></hr>
           <Paragraph className="pb-4 md:pb-0 grey">
             <FormattedMessage
               description="The home page content"

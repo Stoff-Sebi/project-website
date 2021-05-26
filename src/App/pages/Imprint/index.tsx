@@ -17,7 +17,7 @@ export const Imprint: React.FC = () => {
             style={{ borderTop: "5px solid lightgrey", borderRadius: "1em", maxWidth:"30px" }}
           ></hr>
       <br></br>
-      <Heading>
+      <Heading className="font-bold">
         <FormattedMessage
           defaultMessage="Publisher, development and implementation"
           description="Heading for development section."
