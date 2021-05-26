@@ -48,7 +48,7 @@ export const Home = () => (
         </>
       }
       right={
-        <div className="flex flex-col md:flex-row md:justify-between">
+        <div>
           <NampiLogo />
         </div>
       }
