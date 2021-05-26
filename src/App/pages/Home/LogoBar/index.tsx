@@ -6,9 +6,13 @@ import license from "./license.png"
 export const LogoBar: React.FC = () => {
   return (
     <div className="flex space-x-4">
-      <img className="w-20" src={zimLogo}></img>
-      <img className="w-20" src={gamsLogo}></img>
-      <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.de" target="_blank"><img className="w-20" src={license}></img></a>
+      <a href="https://informationsmodellierung.uni-graz.at/" target="blank" className="w-20"><img src={zimLogo}></img></a>
+      <a href="https://gams.uni-graz.at/" target="_blank" className="w-20"><img src={gamsLogo}></img></a>
+      <a className="w-20">~Icarus~</a>
+      <a className="w-20">~ÖAW~</a>
+      <a className="w-20">~Uni Wien~</a>
+      <a className="w-20">~Go Digital?~</a>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.de" className="w-20" target="_blank"><img src={license}></img></a>
     </div>
   );
 };
