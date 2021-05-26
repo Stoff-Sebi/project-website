@@ -25,7 +25,7 @@ export const Home = () => (
             />
           </Paragraph>
           <hr
-            style={{ borderTop: "5px solid lightgrey", borderRadius: "1em" }}
+            style={{ borderTop: "5px solid lightgrey", borderRadius: "1em", maxWidth:"75px" }}
           ></hr>
           <br></br>
           <div className="max-w-xxl">
