@@ -24,10 +24,17 @@ export const Home = () => (
               defaultMessage="Welcome to the Project-Website of NAMPI!"
             />
           </Paragraph>
-          <hr style={{borderTop:"5px solid lightgrey", borderRadius:"1em"}}></hr>
+          <hr
+            style={{ borderTop: "5px solid lightgrey", borderRadius: "1em" }}
+          ></hr>
           <br></br>
           <div className="max-w-xxl">
-            <Heading className="font-bold">Goals</Heading>
+            <Heading className="font-bold">
+              <FormattedMessage
+                defaultMessage="Project goals"
+                description="Heading for the project goals section"
+              ></FormattedMessage>
+            </Heading>
             <Paragraph>
               <FormattedMessage
                 description="short description of web page goals"
