@@ -8,7 +8,7 @@ import { LogoBar } from "./LogoBar";
 
 export const Home = () => (
   <Layout>
-    <Heading className="text-5xl pb-3 antialiased">
+    <Heading className="text-5xl pb-3 antialiased font-bold">
       <FormattedMessage
         description="The home page heading"
         defaultMessage="Nuns and Monks <br></br> Prosopographical Interfaces"
