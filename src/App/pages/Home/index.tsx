@@ -8,7 +8,7 @@ import { LogoBar } from "./LogoBar";
 
 export const Home = () => (
   <Layout>
-    <Heading className="text-5xl pb-3 antialiased font-bold">
+    <Heading className="text-4xl pb-3 antialiased font-bold">
       <FormattedMessage
         description="The home page heading"
         defaultMessage="Nuns and Monks - <br></br> Prosopographical Interfaces"
@@ -24,7 +24,6 @@ export const Home = () => (
               defaultMessage="Welcome to the Project-Website of NAMPI!"
             />
           </Paragraph>
-          <br></br>
           <hr
             style={{ borderTop: "5px solid lightgrey", borderRadius: "1em", maxWidth:"75px" }}
           ></hr>

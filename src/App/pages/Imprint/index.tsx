@@ -7,7 +7,7 @@ export const Imprint: React.FC = () => {
   return (
     <Layout>
       <Heading
-        className="text-5xl font-bold">
+        className="text-4xl font-bold">
         <FormattedMessage
           defaultMessage="Imprint"
           description="Main heading for imprint page"
