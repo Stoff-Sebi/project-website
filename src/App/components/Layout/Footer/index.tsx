@@ -9,7 +9,7 @@ interface Props {
 
 const Footer: React.FC<Props> = ({lang}) => {
   return (
-    <footer className="w-full bottom-0 h-10 hidden md:block md:fixed p-2 bg-gray-100">
+    <footer className="w-full bottom-0 h-10 hidden md:block md:fixed p-2 bg-gray-100 text-sm">
         <div className="float-left">
           <a
             href="https://www.icar-us.eu/"
