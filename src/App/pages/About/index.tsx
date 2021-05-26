@@ -33,7 +33,7 @@ export const About = () => {
               ></FormattedMessage>
             </Paragraph>
             <br></br>
-            <Heading level={2}>
+            <Heading className="font-light" level={2}>
               <FormattedMessage
                 defaultMessage="Some content"
                 description="Describing some content..."

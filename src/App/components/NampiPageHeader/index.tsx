@@ -16,12 +16,12 @@ interface Props {
 export const NampiPageHeader: React.FC<Props> = (props) => {
   return (
     <>
-      <Heading className="text-4xl font-bold">{props.main}</Heading>
+      <Heading className="text-5xl">{props.main}</Heading>
       <hr
-        className="border-solid border-4 border-gray rounded-md w-10"
+        className="border-solid border-t-4 border-grey rounded-md w-10"
       ></hr>
       <Paragraph className="pb-4 md:pb-0 grey">{props.sub}</Paragraph>
-      <hr className="border-solid border-4 border-gray rounded-md w-10"
+      <hr className="border-solid border-t-4 border-grey rounded-md w-10"
       ></hr>
       <br></br>
     </>

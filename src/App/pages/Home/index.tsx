@@ -32,7 +32,7 @@ export const Home = () => (
       left={
         <>
           <div className="max-w-xxl">
-            <Heading className="font-bold">
+            <Heading className="font-light">
               <FormattedMessage
                 defaultMessage="Project goals"
                 description="Heading for the project goals section"
@@ -47,7 +47,7 @@ export const Home = () => (
             <br></br>
           </div>
           <div className="max-w-xl">
-            <Heading className="font-bold">Background</Heading>
+            <Heading className="font-light">Background</Heading>
             <FormattedMessage
               description="Scientific background of the project-page"
               defaultMessage="Prosopography is a very important research area in the humanities, as it enables researchers to answer a number of important questions about historical societies and the lives of people within them that are difficult to answer when only considering primary sources about individual persons or events alone. The various sources available to us about early modern European Catholic nuns and monks are among the most interesting for transformation into a modern prosopographical database. This is because monastic communities were highly interconnected throughout Europe, the nuns and monks came from a wide range of geographic and social backgrounds, and the data they produced about themselves and their peers was often of very high quality and well- structured."

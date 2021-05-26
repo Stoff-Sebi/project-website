@@ -17,7 +17,7 @@ export const Imprint: React.FC = () => {
           description="Subtitle for imprint page"
         />}
       />
-      <Heading className="font-bold">
+      <Heading className="font-light">
         <FormattedMessage
           defaultMessage="Publisher, development and implementation"
           description="Heading for development section."
