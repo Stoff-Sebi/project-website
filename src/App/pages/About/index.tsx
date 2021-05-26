@@ -4,29 +4,25 @@ import { FormattedMessage } from "react-intl";
 import { Heading } from "../../components/Heading";
 import { Paragraph } from "../../components/Paragraph";
 import { SideGridLayout } from "../../components/SideGridLayout";
+import { NampiPageHeader } from "App/components/NampiPageHeader";
 
 export const About = () => {
   return (
     <Layout>
-      <Heading className="text-4xl font-bold">
-        <FormattedMessage
-          defaultMessage="About"
-          description="About page"
-        ></FormattedMessage>
-      </Heading>
-      <hr
-            style={{ borderTop: "5px solid lightgrey", borderRadius: "1em", maxWidth:"30px" }}
-          ></hr>
-      <Paragraph className="pb-4 md:pb-0 grey">
-            <FormattedMessage
-              description="About page content description"
-              defaultMessage="General information about the project"
-            />
-          </Paragraph>
-      <hr
-            style={{ borderTop: "5px solid lightgrey", borderRadius: "1em", maxWidth:"30px" }}
-          ></hr>
-          <br></br>
+      <NampiPageHeader
+        main={
+          <FormattedMessage
+            defaultMessage="About"
+            description="About page"
+          ></FormattedMessage>
+        }
+        sub={
+          <FormattedMessage
+            description="About page content description"
+            defaultMessage="General information about the project"
+          />
+        }
+      />
       <SideGridLayout
         left={
           <>
@@ -65,8 +61,8 @@ export const About = () => {
             </Heading>
             <Paragraph>
               t is a long established fact that a reader will be distracted by
-              the readable ors, as opposed to using 'Content here,
-              content here', making it look like readable English. Many desktop
+              the readable ors, as opposed to using 'Content here, content
+              here', making it look like readable English. Many desktop
               publishing packages and web pa
             </Paragraph>
             <br></br>

@@ -1,22 +1,22 @@
 import { Heading } from "App/components/Heading";
 import { Layout } from "App/components/Layout";
+import { NampiPageHeader } from "App/components/NampiPageHeader";
 import React from "react";
 import { FormattedMessage } from "react-intl";
 
 export const Imprint: React.FC = () => {
   return (
     <Layout>
-      <Heading
-        className="text-4xl font-bold">
-        <FormattedMessage
+      <NampiPageHeader
+        main={<FormattedMessage
           defaultMessage="Imprint"
           description="Main heading for imprint page"
-        ></FormattedMessage>
-      </Heading>
-      <hr
-            style={{ borderTop: "5px solid lightgrey", borderRadius: "1em", maxWidth:"30px" }}
-          ></hr>
-      <br></br>
+        ></FormattedMessage>}
+        sub={<FormattedMessage
+          defaultMessage="Basic informations about rights, license and project workflows."
+          description="Subtitle for imprint page"
+        />}
+      />
       <Heading className="font-bold">
         <FormattedMessage
           defaultMessage="Publisher, development and implementation"

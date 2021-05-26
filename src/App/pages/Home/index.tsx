@@ -5,32 +5,32 @@ import { Paragraph } from "../../components/Paragraph";
 import { Layout } from "../../components/Layout";
 import { SideGridLayout } from "App/components/SideGridLayout";
 import { LogoBar } from "./LogoBar";
+import { NampiPageHeader } from "App/components/NampiPageHeader";
 
 export const Home = () => (
   <Layout>
-    <Heading className="text-4xl pb-3 antialiased font-bold">
-      <FormattedMessage
-        description="The home page heading"
-        defaultMessage="Nuns and Monks - <br></br> Prosopographical Interfaces"
-        values={{ br: (msg: string) => <br></br> }}
-      />
-    </Heading>
-    <SideGridLayout
-      left={
+    <NampiPageHeader
+      main={
+        <FormattedMessage
+          description="The home page heading"
+          defaultMessage="Nuns and Monks - <br></br> Prosopographical Interfaces"
+          values={{ br: (msg: string) => <br></br> }}
+        />
+      }
+      sub={
         <>
-        <hr
-            style={{ borderTop: "5px solid lightgrey", borderRadius: "1em", maxWidth:"30px" }}
-          ></hr>
           <Paragraph className="pb-4 md:pb-0 grey">
             <FormattedMessage
               description="The home page content"
               defaultMessage="Welcome to the Project-Website of NAMPI!"
             />
           </Paragraph>
-          <hr
-            style={{ borderTop: "5px solid lightgrey", borderRadius: "1em", maxWidth:"30px" }}
-          ></hr>
-          <br></br>
+        </>
+      }
+    ></NampiPageHeader>
+    <SideGridLayout
+      left={
+        <>
           <div className="max-w-xxl">
             <Heading className="font-bold">
               <FormattedMessage
