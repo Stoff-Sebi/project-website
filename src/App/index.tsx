@@ -8,6 +8,7 @@ import { HISTORY, APP_ROUTE, withDynLang } from "./constants";
 import { DEFAULT_LOCALE } from "../I18n/constants";
 import { TranslationProvider } from "I18n/TranslationContext";
 import { Locale } from "I18n/Locale";
+import Imprint from "./pages/Imprint";
 
 export const App = () => {
   return (
@@ -44,6 +45,11 @@ export const App = () => {
                   exact
                   path={`/:lang${APP_ROUTE.PERSON}`}
                   component={Person}
+                />
+                <Route
+                  exact
+                  path={`/:lang${APP_ROUTE.IMPRINT}`}
+                  component={Imprint}
                 />
                 <Route path="/:lang/*" component={NoMatch} />
               </Switch>
