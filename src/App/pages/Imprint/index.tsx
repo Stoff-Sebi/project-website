@@ -13,6 +13,9 @@ export const Imprint: React.FC = () => {
           description="Main heading for imprint page"
         ></FormattedMessage>
       </Heading>
+      <hr
+            style={{ borderTop: "5px solid lightgrey", borderRadius: "1em", maxWidth:"30px" }}
+          ></hr>
       <br></br>
       <Heading>
         <FormattedMessage
