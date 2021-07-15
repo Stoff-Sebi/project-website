@@ -16,16 +16,17 @@ const WPPage: React.FC<Props> = (props) => {
 
     const { pageData, reqURL } = useWpPage(props.wpEndpoint, props.id);
 
-    return (
+    return pageData ? (
         <>
             {pageData?.title.rendered} ( from wp-backend: {reqURL.toString()}
             <NampiPageHeader
                 main={<>{pageData?.title.rendered}</>}
                 sub={<p>Some subtitle?</p>}
             />
-             
+            <div dangerouslySetInnerHTML={{__html: pageData?.content.rendered}}></div>
+            <br></br> 
         </>
-    )
+    ) : null
 }
 
 
