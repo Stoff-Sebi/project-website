@@ -1,6 +1,7 @@
 import { useWpPage } from "App/hooks/useWpPage";
 import React from "react";
 import { NampiPageHeader } from "../NampiPageHeader";
+import styles from "./styles.module.css";
 
 interface Props {
     wpEndpoint: string,
@@ -23,7 +24,7 @@ const WPPage: React.FC<Props> = (props) => {
                 main={<>{pageData?.title.rendered}</>}
                 sub={<p>Some subtitle?</p>}
             />
-            <div dangerouslySetInnerHTML={{__html: pageData?.content.rendered}}></div>
+            <div className={styles.wpDiv} dangerouslySetInnerHTML={{__html: pageData?.content.rendered}}></div>
             <br></br> 
         </>
     ) : null
