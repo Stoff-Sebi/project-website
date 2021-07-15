@@ -13,11 +13,11 @@ interface Props {
  */
 const WPPage: React.FC<Props> = (props) => {
 
-    const { pageData } = useWpPage(props.wpEndpoint, props.id);
+    const { pageData, reqURL } = useWpPage(props.wpEndpoint, props.id);
 
     return (
         <h1>
-            {pageData?.title.rendered}
+            {pageData?.title.rendered} ( from: {reqURL.toString()} )
         </h1>
     )
 }
