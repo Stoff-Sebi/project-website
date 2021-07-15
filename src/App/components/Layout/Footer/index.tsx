@@ -23,6 +23,7 @@ const Footer: React.FC<Props> = ({lang}) => {
         <div className="float-right flex">
           <Link to={`/${lang}${APP_ROUTE.IMPRINT}`} className="mr-5">Imprint</Link>
           <Link to={`/${lang}${APP_ROUTE.TEAM}`} className="mr-5">Contact</Link>
+          <Link to={`/${lang}${APP_ROUTE.DATA_PROTECTION}`} className="mr-5">Data protection</Link>
         </div>
     </footer>
   );
