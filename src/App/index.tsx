@@ -9,6 +9,7 @@ import { DEFAULT_LOCALE } from "../I18n/constants";
 import { TranslationProvider } from "I18n/TranslationContext";
 import { Locale } from "I18n/Locale";
 import Imprint from "./pages/Imprint";
+import Team from "./pages/Team";
 
 export const App = () => {
   return (
@@ -50,6 +51,11 @@ export const App = () => {
                   exact
                   path={`/:lang${APP_ROUTE.IMPRINT}`}
                   component={Imprint}
+                />
+                <Route
+                  exact
+                  path={`/:lang${APP_ROUTE.TEAM}`}
+                  component={Team}
                 />
                 <Route path="/:lang/*" component={NoMatch} />
               </Switch>
