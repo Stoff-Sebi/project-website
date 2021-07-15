@@ -5,11 +5,18 @@ import { Heading } from "../../components/Heading";
 import { Paragraph } from "../../components/Paragraph";
 import { SideGridLayout } from "../../components/SideGridLayout";
 import { NampiPageHeader } from "App/components/NampiPageHeader";
+import WPPage from "App/components/WPPage";
+import { WP_PAGE_IDS, WP_ENDPOINT } from "App/constants";
 
 export const About = () => {
   return (
     <Layout>
-      <NampiPageHeader
+      <WPPage
+        wpEndpoint={WP_ENDPOINT}
+        id={WP_PAGE_IDS.ABOUT}
+        
+      ></WPPage> 
+      {/* <NampiPageHeader
         main={
           <FormattedMessage
             defaultMessage="About"
@@ -23,6 +30,9 @@ export const About = () => {
           />
         }
       />
+
+       
+
       <SideGridLayout
         left={
           <>
@@ -91,7 +101,7 @@ export const About = () => {
             <img src="https://picsum.photos/400/400?random=2" />
           </div>
         }
-      />
+      /> */}
     </Layout>
   );
 };
