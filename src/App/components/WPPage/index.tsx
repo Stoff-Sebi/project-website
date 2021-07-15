@@ -1,5 +1,6 @@
 import { useWpPage } from "App/hooks/useWpPage";
 import React from "react";
+import { NampiPageHeader } from "../NampiPageHeader";
 
 interface Props {
     wpEndpoint: string,
@@ -16,9 +17,14 @@ const WPPage: React.FC<Props> = (props) => {
     const { pageData, reqURL } = useWpPage(props.wpEndpoint, props.id);
 
     return (
-        <h1>
-            {pageData?.title.rendered} ( from: {reqURL.toString()} )
-        </h1>
+        <>
+            {pageData?.title.rendered} ( from wp-backend: {reqURL.toString()}
+            <NampiPageHeader
+                main={<>{pageData?.title.rendered}</>}
+                sub={<p>Some subtitle?</p>}
+            />
+             
+        </>
     )
 }
 
