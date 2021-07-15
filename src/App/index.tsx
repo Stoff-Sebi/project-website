@@ -10,6 +10,7 @@ import { TranslationProvider } from "I18n/TranslationContext";
 import { Locale } from "I18n/Locale";
 import Imprint from "./pages/Imprint";
 import Team from "./pages/Team";
+import DataProtection from "./pages/DataProtection";
 
 export const App = () => {
   return (
@@ -56,6 +57,11 @@ export const App = () => {
                   exact
                   path={`/:lang${APP_ROUTE.TEAM}`}
                   component={Team}
+                />
+                <Route
+                  exact
+                  path={`/:lang${APP_ROUTE.DATA_PROTECTION}`}
+                  component={DataProtection}
                 />
                 <Route path="/:lang/*" component={NoMatch} />
               </Switch>
