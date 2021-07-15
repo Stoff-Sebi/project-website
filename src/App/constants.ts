@@ -16,7 +16,9 @@ export enum APP_ROUTE {
 
 export enum WP_PAGE_IDS {
   HOME = 8,
-  ABOUT = 43
+  ABOUT = 43,
+  IMPRINT = 37,
+  MEMBERS = 60
 }
 
 export const WP_ENDPOINT = "https://nampi.icar-us.eu/wp-json/wp/v2";

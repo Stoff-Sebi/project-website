@@ -1,12 +1,19 @@
 import { Heading } from "App/components/Heading";
 import { Layout } from "App/components/Layout";
 import { NampiPageHeader } from "App/components/NampiPageHeader";
+import WPPage from "App/components/WPPage";
+import { WP_ENDPOINT, WP_PAGE_IDS } from "App/constants";
 import React from "react";
 import { FormattedMessage } from "react-intl";
 
 export const Imprint: React.FC = () => {
   return (
     <Layout>
+      <WPPage
+        wpEndpoint={WP_ENDPOINT}
+        id={WP_PAGE_IDS.IMPRINT}
+        
+      ></WPPage>
       <NampiPageHeader
         main={<FormattedMessage
           defaultMessage="Imprint"
