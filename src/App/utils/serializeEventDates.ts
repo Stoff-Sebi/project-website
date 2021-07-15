@@ -22,6 +22,7 @@ export const serializeEventDates = (
     //   dates.push(dString);
     // }
 
+    //@ts-ignore
     if(events[i].earliest) dates.push(events[i].earliest as string);
     
 
