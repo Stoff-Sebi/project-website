@@ -6,9 +6,17 @@ import { Layout } from "../../components/Layout";
 import { SideGridLayout } from "App/components/SideGridLayout";
 import { LogoBar } from "./LogoBar";
 import { NampiPageHeader } from "App/components/NampiPageHeader";
+import WPPage from "App/components/WPPage";
+import { WP_PAGE_IDS, WP_ENDPOINT } from "App/constants";
 
 export const Home = () => (
   <Layout>
+
+    <WPPage
+      id={WP_PAGE_IDS.HOME}
+      wpEndpoint={WP_ENDPOINT}
+    ></WPPage>
+
     <NampiPageHeader
       main={
         <FormattedMessage
