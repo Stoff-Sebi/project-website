@@ -11881,6 +11881,11 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typescript@>=3:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.5.tgz#4d1c37cc16e893973c45a06886b7113234f119f4"
+  integrity sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==
+
 typescript@^4.0, typescript@^4.2.4:
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
@@ -12586,6 +12591,13 @@ worker-rpc@^0.1.0:
   integrity sha512-P1WjMrUB3qgJNI9jfmpZ/htmBEjFh//6l/5y8SD9hg1Ef5zTTVVoRjTrTEzPrNBQvmhMxkoTsjOXN10GWU7aCg==
   dependencies:
     microevent.ts "~0.1.1"
+
+wp-types@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/wp-types/-/wp-types-2.10.0.tgz#f816346d37026563fe97bf502d4a5da3397c60f9"
+  integrity sha512-b5e16CQfg8570cP+qcObgFNxXJImduSTZs3ExItG6fNGw2Yc/LWSExgijMjZeAayudboobwAQS96UB6bIqaGHw==
+  dependencies:
+    typescript ">=3"
 
 wrap-ansi@^5.1.0:
   version "5.1.0"
