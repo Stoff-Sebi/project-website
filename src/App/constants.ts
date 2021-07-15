@@ -11,14 +11,16 @@ export enum APP_ROUTE {
   PERSONS = "/persons",
   SEARCH = "/search",
   SOURCES = "/sources",
-  PERSON = "/person/:id"
+  PERSON = "/person/:id",
+  DATA_PROTECTION ="/dataprotection"
 }
 
 export enum WP_PAGE_IDS {
   HOME = 8,
   ABOUT = 43,
   IMPRINT = 37,
-  MEMBERS = 60
+  MEMBERS = 60,
+  DATA_PROTECTION = 3
 }
 
 export const WP_ENDPOINT = "https://nampi.icar-us.eu/wp-json/wp/v2";
