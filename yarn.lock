@@ -7528,10 +7528,10 @@ jsprim@^1.2.2:
     array-includes "^3.1.2"
     object.assign "^4.1.2"
 
-keycloak-js@^12.0.4:
-  version "12.0.4"
-  resolved "https://registry.yarnpkg.com/keycloak-js/-/keycloak-js-12.0.4.tgz#fc60ccd8c32788e48302a543e6133e852a48abaf"
-  integrity sha512-O/BHtyiDrZrUnKBrVF8POojqd3gmhuiDw4FiI+FbnB14nu7G5jKFrKYZa9Q0JYKIZXHJOBzSaKQcMp2WUI+zmA==
+keycloak-js@^15.0.2:
+  version "15.0.2"
+  resolved "https://registry.yarnpkg.com/keycloak-js/-/keycloak-js-15.0.2.tgz#9d12dd8860953a267b9b18f351ad2e76b8e94a9c"
+  integrity sha512-dv2a4NcPSH3AzGWG3ZtB+VrHpuQLdFBYXtQBj/+oBzm6XNwnVAMdL6LIC0OzCLQpn3rKTQJtNSATAGhbKJgewQ==
   dependencies:
     base64-js "1.3.1"
     js-sha256 "0.9.0"
@@ -8216,13 +8216,13 @@ multicast-dns@^6.0.1:
     dns-packet "^1.3.1"
     thunky "^1.0.2"
 
-nampi-use-api@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/nampi-use-api/-/nampi-use-api-0.1.8.tgz#6e92f5b0da3685fd512cbc64e4673b597c73f201"
-  integrity sha512-Gx3EevtsDmtKHwW3gS/aIpQqGdTgUJo+A7vzBsbhZfiQfnusWt/Y55Zr9Chk4FDE3Q+GxZAZu3SNS3ZHg0I5Zw==
+nampi-use-api@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/nampi-use-api/-/nampi-use-api-0.3.2.tgz#daf1aa6dc7643356c1f58057ca545d5376bf2d5b"
+  integrity sha512-i6ws3Empyh/AMkWPYY+EdnMXHP/KtJxiQ+cXDoXE/BLUkZQ+oxPCX9rCyGiUIM8+g+rOmjG4/LtE+2dWdhp+zA==
   dependencies:
     jsonld "^5.2.0"
-    keycloak-js "^12.0.4"
+    keycloak-js "^15.0.2"
     uuid "^8.3.2"
 
 nan@^2.12.1:
