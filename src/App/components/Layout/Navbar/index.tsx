@@ -28,16 +28,6 @@ export const Navbar: React.FC<Props> = (props) => {
           defaultMessage="Data-page"
         />
       </a>
-
-      <NavLink activeClassName="text-black" to={`/${props.lang}${APP_ROUTE.PERSONS}`}>
-        <FormattedMessage
-          description="The persons link label"
-          defaultMessage="Sources"
-        />
-      </NavLink>
-
-
-
       <NavLink activeClassName="text-black" to={`/${props.lang}${APP_ROUTE.PERSONS}`}>
         <FormattedMessage
           description="The persons link label"
