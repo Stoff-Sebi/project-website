@@ -12,11 +12,6 @@ import { WP_PAGE_IDS, WP_ENDPOINT } from "App/constants";
 export const Home = () => (
   <Layout>
 
-    <WPPage
-      id={WP_PAGE_IDS.HOME}
-      wpEndpoint={WP_ENDPOINT}
-    ></WPPage>
-
     <NampiPageHeader
       main={
         <FormattedMessage
