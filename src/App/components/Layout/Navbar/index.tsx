@@ -28,13 +28,6 @@ export const Navbar: React.FC<Props> = (props) => {
           defaultMessage="Home"
         />
       </NavLink>
-
-      <a style={{color:"rgba(59, 130, 246, .9)", fontWeight:600}} target="_blank" href={APP_ROUTE.DATA_PAGE}>
-        <FormattedMessage
-          description="The persons link label"
-          defaultMessage="Data page"
-        />
-      </a>
      
       <NavLink to={`/${props.lang}${APP_ROUTE.ABOUT}`} activeClassName="text-black">
         <FormattedMessage
@@ -93,6 +86,13 @@ export const Navbar: React.FC<Props> = (props) => {
     </div>
   </div>
 </div>
+
+<a style={{color:"rgba(59, 30, 246, .9)", fontWeight:600}} target="_blank" href={APP_ROUTE.DATA_PAGE}>
+        <FormattedMessage
+          description="The persons link label"
+          defaultMessage="Data page"
+        />
+      </a>
 
 
       {/*
