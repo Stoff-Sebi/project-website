@@ -12,7 +12,8 @@ export enum APP_ROUTE {
   SEARCH = "/search",
   SOURCES = "/sources",
   PERSON = "/person/:id",
-  DATA_PROTECTION ="/dataprotection"
+  DATA_PROTECTION ="/dataprotection",
+  DATA_PAGE = "https://data.nampi.icar-us.eu/"
 }
 
 export enum WP_PAGE_IDS {
