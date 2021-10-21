@@ -48,6 +48,12 @@ export const Navbar: React.FC<Props> = (props) => {
           defaultMessage="Team"
         />
       </NavLink>
+      <NavLink to={`/${props.lang}${APP_ROUTE.ABOUT}`} activeClassName="text-black">
+        <FormattedMessage
+          description="Analysis"
+          defaultMessage="Analysis"
+        />
+      </NavLink>
 
       <div className="relative inline-block text-left">
   <div>
