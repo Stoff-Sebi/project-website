@@ -15,6 +15,43 @@ export const Navbar: React.FC<Props> = (props) => (
       <NavLink to={`/${props.lang}${APP_ROUTE.HOME}`} className="font-semibold text-2xl">
         <NampiLogo className="h-10 bg-white p-1 rounded" />
       </NavLink>
+
+      <a style={{borderBottom:"10px sold lightblue"}} target="_blank" href={APP_ROUTE.DATA_PAGE}>
+        <FormattedMessage
+          description="The persons link label"
+          defaultMessage="Data-page"
+        />
+      </a>
+
+      <NavLink activeClassName="text-black" to={`/${props.lang}${APP_ROUTE.PERSONS}`}>
+        <FormattedMessage
+          description="The persons link label"
+          defaultMessage="Sources"
+        />
+      </NavLink>
+
+      <NavLink activeClassName="text-black" to={`/${props.lang}${APP_ROUTE.PERSONS}`}>
+        <FormattedMessage
+          description="The persons link label"
+          defaultMessage="Methodology"
+        />
+      </NavLink>
+
+      <NavLink to={`/${props.lang}${APP_ROUTE.ABOUT}`} activeClassName="text-black">
+        <FormattedMessage
+          description="About page"
+          defaultMessage="About"
+        />
+      </NavLink>
+
+      <NavLink to={`/${props.lang}${APP_ROUTE.ABOUT}`} activeClassName="text-black">
+        <FormattedMessage
+          description="About page"
+          defaultMessage="Team"
+        />
+      </NavLink>
+
+      {/*
       <NavLink activeClassName="text-black" to={`/${props.lang}${APP_ROUTE.PERSONS}`}>
         <FormattedMessage
           description="The persons link label"
@@ -45,6 +82,7 @@ export const Navbar: React.FC<Props> = (props) => (
           defaultMessage="About"
         />
       </NavLink>
+      */}
     </div>
     <div className="">
         <NampiLangSelect className="text-black"/>
