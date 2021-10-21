@@ -22,10 +22,10 @@ export const Navbar: React.FC<Props> = (props) => {
         <NampiLogo className="h-10 bg-white p-1 rounded" />
       </NavLink>
 
-      <a style={{borderBottom:"10px sold lightblue"}} target="_blank" href={APP_ROUTE.DATA_PAGE}>
+      <a style={{color:"rgba(59, 130, 246, .9)", fontWeight:600}} target="_blank" href={APP_ROUTE.DATA_PAGE}>
         <FormattedMessage
           description="The persons link label"
-          defaultMessage="Data-page"
+          defaultMessage="Data page"
         />
       </a>
       <NavLink activeClassName="text-black" to={`/${props.lang}${APP_ROUTE.PERSONS}`}>
